@@ -5,6 +5,9 @@ spring:
 debug: false
 
 logging:
+  pattern:
+    level: "%5p [%X{x-request-id}]"
+    console: "%d{yyyy-MM-dd HH:mm:ss} %5p [%X{x-request-id}] %c{1} - %m%n"
   level:
     com.example: debug
     org.springframework.web.servlet: debug
