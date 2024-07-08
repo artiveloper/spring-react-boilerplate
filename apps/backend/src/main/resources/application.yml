@@ -6,7 +6,7 @@ debug: false
 
 logging:
   level:
-    com.example.board: debug
+    com.example: debug
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.jdbc.BasicBinder: trace
 
