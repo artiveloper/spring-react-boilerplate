@@ -1,0 +1,25 @@
+services:
+  mysql:
+    hostname: mysql
+    container_name: mysql
+    image: mysql:8.4.0
+    restart: no
+    ports:
+      - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: board
+      MYSQL_DATABASE: board
+      MYSQL_USER: board
+      MYSQL_PASSWORD: board
+      TZ: Asia/Seoul
+    volumes:
+      - ./volumes/mysql:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_general_ci
+      - --max_allowed_packet=256M
+    networks:
+      - app_network
+
+networks:
+  app_network:
