@@ -2,9 +2,9 @@ package org.example.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.connector.ClientAbortException;
-import org.example.config.CommonHttpRequestInterceptor;
+import org.example.common.interceptor.CommonHttpRequestInterceptor;
 import org.example.constant.ErrorCode;
-import org.example.domain.common.dto.CommonResponse;
+import org.example.common.dto.CommonResponse;
 import org.slf4j.MDC;
 import org.springframework.core.NestedExceptionUtils;
 import org.springframework.http.HttpStatus;

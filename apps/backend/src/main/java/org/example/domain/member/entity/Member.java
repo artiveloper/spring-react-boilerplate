@@ -6,7 +6,7 @@ import jakarta.persistence.Table;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.example.domain.common.entity.BaseEntity;
+import org.example.common.entity.BaseEntity;
 
 @Table(
         name = "member",
