@@ -33,6 +33,8 @@ spring:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 100
+  jwt:
+    secret: 5b6d760da2949cf37cbb5bb6adf4da48777e10dbd903fe2a494a642e707c35697fc27b7da831248c4eb47bacfa95e5763704707cfafee0b80e8448702e986129
 
 ---
 spring:
@@ -42,3 +44,5 @@ spring:
   datasource:
     url: jdbc:h2:mem:board;mode=mysql
     driver-class-name: org.h2.Driver
+  jwt:
+    secret: 980c303b8609d4c56977eb4c72455c12901739dbba23900c50d48290c2209333736e3cda5281abe4235bacc43a2b1cfdccd22f0b3d0744226c91fc6c8a8011dc
